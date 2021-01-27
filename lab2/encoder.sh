@@ -1,6 +1,6 @@
 #!/bin/bash
 
-declare -a digits=( \
+declare -a digits=( 
 " 0000
 00  00
 00  00
@@ -62,7 +62,13 @@ declare -a digits=( \
  9999"
 )
 
-for i in "${digits[@]}"
-do
-   echo "$i"
-done
+function encode {
+   digit=$1
+   lines=($(echo -ne "${digits[digit]}" | tr ' ' '*' | tr '\n' ' '))
+   echo "${lines[@]}"
+}
+
+# for i in "${digits[@]}"
+# do
+#    echo "$i"
+# done
