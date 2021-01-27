@@ -1,8 +1,6 @@
 #!/bin/bash
 
-seed=1
-
 function rand {
-    seed=$((seed * 1103515245 + 12345))
-    echo $((seed / 65536 % 32768))
+    val=$(($(date +%s) * 1103515245 + 12345))
+    echo $(($val / 65536 % 32768))
 }

@@ -67,8 +67,3 @@ function encode {
    lines=($(echo -ne "${digits[digit]}" | tr ' ' '*' | tr '\n' ' '))
    echo "${lines[@]}"
 }
-
-# for i in "${digits[@]}"
-# do
-#    echo "$i"
-# done
