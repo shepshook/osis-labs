@@ -1,0 +1,4 @@
+insert into my_table (name, age, pet) values (max, 18, cat);
+insert into my_table (name, age, pet) values (nick, 23, fish);
+insert into my_table (name, age, pet) values (mike, 19, dog);
+insert into my_table (name, age, pet) values (joe, 10, transformer);
